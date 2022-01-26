@@ -1,0 +1,8 @@
+A  = [ 4 -2 1 ; 20 -7 12 ; -8 13 17];
+b = [11 ; 70 ; 17];
+try
+disp('LU: ');
+[L,U,x] = LU(A,b)
+catch err
+    fprintf('error: %s\n', err.message)
+end
